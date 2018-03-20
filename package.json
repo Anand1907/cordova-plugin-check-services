@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Anand1907/cordova-plugin-check-services.git"
+    "url": "https://github.com/Anand1907/cordova-plugin-check-services.git"
   },
   "keywords": [
     "ecosystem:cordova",
