@@ -1,0 +1,31 @@
+{
+  "name": "cordova-plugin-check-services",
+  "version": "0.0.1",
+  "description": "Plugin to check from which service app is installed",
+  "cordova": {
+    "id": "cordova-plugin-check-services",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anand1907/cordova-plugin-check-services.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.4.0"
+    }
+  ],
+  "author": "Anand",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Anand1907/cordova-plugin-check-services/issues"
+  },
+  "homepage": "https://github.com/Anand1907/cordova-plugin-check-services#readme"
+}

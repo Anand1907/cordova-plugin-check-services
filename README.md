@@ -1,0 +1,17 @@
+# Cordova Check Installed Service Plugin
+
+Plugin to check from where app is installed from
+
+## Using
+
+In your cordova project folder:
+
+    $ cordova plugin add https://github.com/Anand1907/cordova-plugin-check-services.git
+
+
+Then the variable 'CheckServices' will be available after `deviceready` fires.
+
+```js
+```
+
+

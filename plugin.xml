@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+        id="cordova-plugin-check-services"
+        version="0.0.2">
+
+  <name>CheckServices</name>
+
+  <engines>
+    <engine name="cordova" version=">=3.4.0"/>
+  </engines>
+
+  <asset src="www/CheckServices.js" target="js/CheckServices.js"/>
+
+  <js-module src="www/CheckServices.js" name="CheckServices">
+    <clobbers target="CheckServices" />
+  </js-module>
+
+  <platform name="android">
+
+    <config-file target="res/xml/config.xml" parent="/*">
+      <feature name="CheckServices">
+        <param name="android-package" value="com.example.plugin.CheckServices"/>
+      </feature>
+    </config-file>
+
+    <source-file src="src/android/CheckServices.java" target-dir="src/com/example/plugin/"/>
+  </platform>
+
+</plugin>
