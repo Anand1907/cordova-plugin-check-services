@@ -1,5 +1,6 @@
 package com.example.plugin;
 
+import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 
 import org.apache.cordova.*;
@@ -8,8 +9,6 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 import org.json.JSONException;
 
-import com.google.android.gms.common.ConnectionResult;
-import com.google.android.gms.common.GoogleApiAvailability;
 
 public class CheckServices extends CordovaPlugin {
 
@@ -19,6 +18,7 @@ public class CheckServices extends CordovaPlugin {
         if (action.equals("check")) {
 
             try {
+
                 final String installer = this.cordova.getActivity().getApplicationContext().getPackageManager().getInstallerPackageName(this.cordova.getActivity().getApplicationContext().getPackageName());
                 callbackContext.success(jo.put("type", installer));
                 return true;
