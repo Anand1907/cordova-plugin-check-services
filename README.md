@@ -11,7 +11,15 @@ In your cordova project folder:
 
 Then the variable 'CheckServices' will be available after `deviceready` fires.
 
-```js
-```
+CheckServices.check(successCheckServices, failureCheckServices);
 
 
+successCheckServices contains an type attribute from which application can check the installer name.
+
+function successCheckServices(message) {
+    console.log(message.type);      
+}
+
+function failureCheckServices(message) {
+    console.log(message.error);     // Error string from Stack Trace
+}
