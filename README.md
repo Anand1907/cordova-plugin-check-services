@@ -19,7 +19,7 @@ successCheckServices contains an type attribute from which application can check
 
 function successCheckServices(message) {
 
-    console.log(message.type);      
+    console.log(message.type);      // This helps you to get Installer ir-respective to store. i.e AWS , Play Store , Baidu etc.
 
 }
 
