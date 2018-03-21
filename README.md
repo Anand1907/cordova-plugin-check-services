@@ -1,6 +1,7 @@
 # Cordova Check Installed Service Plugin
 
-Plugin to check from where app is installed from
+Plugin to check from where app is installed from like Play Store, Baidu , Amazon etc.
+
 
 ## Using
 
@@ -19,7 +20,7 @@ successCheckServices contains an type attribute from which application can check
 
 function successCheckServices(message) {
 
-    console.log(message.type);      // This helps you to get Installer ir-respective to store. i.e AWS , Play Store , Baidu etc.
+    console.log(message.type);      // This helps you to get Installer ir-respective to store.
 
 }
 
